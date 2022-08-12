@@ -10,7 +10,7 @@ To get you started you can simply clone the `AngularJS Seed Project` repository 
 
 You need git to clone the `AngularJS Seed Project` repository.
 
-We also use a number of Node.js tools to initialize and test `angular-gulp-bower-seed`.
+I also use Node.js tools to initialize and test.
 You must have Node.js and its package manager (npm) installed.
 
 ### Clone `AngularJs Seed Project`
@@ -19,6 +19,8 @@ You must have Node.js and its package manager (npm) installed.
 ``` bash
 # install dependencies
 npm install
+If cmd tell you "Unable to find a suitable version for angular" 
+then choose: "angular#1.8.3 which resolved to 1.8.3 and is required by angular-cookies#1.8.3, angular-resource#1.8.3"
 
 # install angular
 bower install
