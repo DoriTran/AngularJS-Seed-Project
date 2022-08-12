@@ -12,21 +12,18 @@
   <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
   <link rel="stylesheet" href="bower_components/select2-bootstrap/select2-bootstrap.css">
 
-  <link rel="stylesheet" href="src/styles/config.css">
-  <link rel="stylesheet" href="src/styles/app.css">
-
 </head>
-<body ng-app="myApp" ng-controller="appCtrl">
-<!-- <base href="/" /> -->
-  <div ui-view style="height: 100%;"></div>
-  <modal data="modalData">
-  </modal>
-  <!-- build:js scripts/vendor.js -->
+<body ng-app="app">
+  <ng-view></ng-view>
+  <div>Hello?</div>
+  <div ui-view></div>
+  <!-- build angular js -->
+    <!-- ASSETS -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js"></script>
 
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -37,16 +34,30 @@
   <script src="bower_components/chart.js/dist/Chart.min.js"></script>
   <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
   <script src="bower_components/select2/dist/js/select2.min.js"></script>
-  <!-- endbuild -->
+    <!-- / -->
 
-  <script src="src/directives/directives.js"></script>
-  <script src="src/controllers/appControllers.js"></script>
-  <!-- <script src="src/controllers/monitorControllers.js"></script> -->
-  <script src="src/services/services.js"></script>
-  <script src="src/services/app.util.js"></script>
-  <script src="src/services/apiServices.js"></script>
-  <script src="src/filters/filters.js"></script>
-  <script src="./app.js"></script>
+    <!-- MODULES -->
+  <script src="app.js"></script>
+    <!-- / -->
+
+    <!-- COMPONENTS -->
+  <!-- <script src="./src/components/Navbar/Navbar.js"></script>
+
+  <script src="./src/pages/employee/Employee.js"></script>
+  <script src="./src/components/employee/SearchBar/SearchBar.js"></script>
+  <script src="./src/components/employee/EmployeeInteraction/EmployeeInteraction.js"></script> -->
+  
+    <!-- / -->
+
+    <!-- PAGES -->
+
+    <!-- / -->
+
+    <!-- SERVICES -->
+  <!-- <script src="./src/services/employee/getAllEmployee.js"></script> -->
+    <!-- / -->
+
+  <!-- endbuild -->
 
 
 </body>
